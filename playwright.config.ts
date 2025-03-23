@@ -18,7 +18,7 @@ import path from "node:path";
 dotenv.config({ path: path.resolve(__dirname,'.env') });
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/Internet',
   /* Timeout for each test */
    timeout: 60000 ,
 
@@ -32,11 +32,11 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'https://magento.softwaretestingboard.com',
+    baseURL: 'https://the-internet.herokuapp.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
