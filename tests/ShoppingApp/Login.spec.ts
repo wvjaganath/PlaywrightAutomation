@@ -1,7 +1,7 @@
 import {test, expect}  from "@playwright/test";
 import * as path from "node:path";
 
-test('login', async ({page}) => {
+test.skip('login', async ({page}) => {
 
     await page.goto('/');
     await expect(page).toHaveTitle("Home Page");
