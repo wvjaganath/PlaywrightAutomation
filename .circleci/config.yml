@@ -19,9 +19,9 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       #name: Install Playwright Browsers
-      - run: npx playwright install --with-deps
+      - run: npm install
       # name: Run Playwright tests
-      - run: npx playwright test
+      - run: npm run test
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
