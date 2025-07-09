@@ -22,7 +22,7 @@ jobs:
       #name: Install Playwright Browsers
 #      - run: npm install
       # name: Run Playwright tests
-      - run: npm run test
+      - run: npx playwright test
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
