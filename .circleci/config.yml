@@ -18,8 +18,9 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - run: npm ci
       #name: Install Playwright Browsers
-      - run: npm install
+#      - run: npm install
       # name: Run Playwright tests
       - run: npm run test
 
